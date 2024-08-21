@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    height: calc(100vh - 120px);
+}
+
+/* Área Esquerda */
+.secao-esquerda {
+    position: relative;
+    width: 60%;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8%;
+}
+
+.colocar-texto {
+    font-size: 24px;
+    color: #002d64;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.colocar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text-area {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    font-size: 32px;
+    border: 2px solid #d8e1ea;
+    border-radius: 16px;
+    outline: none;
+    background-color: #f0f4f8;
+    color: #002d64;
+    resize: none;
+    border: none;
+}
+
+/* Container de alerta */
+.colocar-alerta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 390px;
+}
+
+.alert-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.alerta-texto {
+    font-size: 14px;
+    color: #666;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1%;
+}
+
+button {
+    width: 48%;
+    padding: 16px 0;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #002d64;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #d8e1ea;
+    color: #002d64;
+}
+
+/* Área Direita */
+.secao-direita {
+    width: 35%;
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+    width: 80%;
+    margin-left: -20%;
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.right-section p {
+    font-size: 20px; /* Aumentado o tamanho da fonte para o texto criptografado/descriptografado */
+    color: #666;
+}
+
+/* Classe para esconder elementos */
+.hidden {
+    display: none;
+}
+
+.btn-copy {
+    width: 18%; /* Faz o botão ocupar toda a largura disponível */
+    margin-left: -9%;
+    margin-bottom: 10%;
+    padding: 16px 0;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #002d64;
+    color: white;
+    position: absolute; /* Posiciona o botão na parte inferior da área direita */
+    bottom: 20px;
+}
