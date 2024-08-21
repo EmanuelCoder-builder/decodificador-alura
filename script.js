@@ -1,4 +1,4 @@
-// Função para criptografar o texto
+
 function criptografar(msg) {
     const vogais = ['a', 'e', 'i', 'o', 'u'];
     let cript = [];
@@ -21,7 +21,7 @@ function criptografar(msg) {
     return junto;
 }
 
-// Função para descriptografar o texto
+
 function descriptografar(msg) {
     const vogais = ['a', 'e', 'i', 'o', 'u'];
     let descript = [];
@@ -44,7 +44,7 @@ function descriptografar(msg) {
     return junto;
 }
 
-// Função para processar o texto e exibir o resultado
+
 function processarTexto(acao) {
     const textoArea = document.querySelector('.text-area').value;
     let resultado;
@@ -57,17 +57,17 @@ function processarTexto(acao) {
         document.getElementById('resultado-titulo').textContent = 'Texto Descriptografado:';
     }
 
-    // Atualiza o conteúdo da área direita
+    
     document.getElementById('resultado-texto').textContent = resultado;
 
-    // Oculta a imagem
+    
     document.getElementById('illustration').style.display = 'none';
 
-    // Exibe o botão de copiar
+    
     document.getElementById('btn-copy').classList.remove('hidden');
 }
 
-// Função para copiar o texto para a área de transferência
+
 function copiarTexto() {
     const texto = document.getElementById('resultado-texto').textContent;
     navigator.clipboard.writeText(texto).then(() => {
